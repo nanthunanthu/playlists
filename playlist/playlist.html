@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+    <link rel="stylesheet" href="playlist.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-container">
+ <div class="logo">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAABGZJREFUeF7tnAGO1DAMRbMnAU4CnAQ4CXAS4CTASYCTgL52LEWhsX9cN5l2HGm00jZJ05dvx3Uy81SyhBJ4Cu0tOysJNFgECTSBBhMI7i4VmkCDCQR3t0qhb0opX0opL0spP0opn29/tcf7VErBZ3XBuD/0BrECKGB+3xjQWwPq3xv4lVAB830p/ehoBVDABNS2QKmA2isAigI1r4AqMDGGLrcVQAXMFjhtPHW72VBrmKcB+ruU8opQqFSZBbWFeVdAsQj96kAbBTrD/Ldg3hVQ+L6PHaCsD22bH6XUHsy7Aaqpk1Gb5nujoWow7wIoYGKQW6u7KA7+E2ZvrfK961FQLZjLgSJug5kDaq9Y/hPtNIVGLVQMzClAAa0F9uKmSA2kgLCCehYo6n0tpfxRJq93CePFczDlkDgUN39nmDEzOGsxkj4YhTL3i6gTChR+ECas+UN20IypXxqoFvawEKXeCMwRkx8dh6d+iEJh4nDaEYU18/pelzL5SJje8OYyQK2AnFEsFPlzZ5boMkBZv4lwBUVCFgnSAVML2JkJYX2oTNxICIS+R9u5fSijToCEGUdA0+BaCm1jWWbsuJ+nnRuopU4mIGcVaNXTgGJLQiyk7sfy/d52bqC97DoG7V1cLHC96xrQXh7AUqm33SFAZ6rT8qFaYsUzEdb93EC92xVeFXp9qNd0ve3cQJFd7yU3rHRbNFRtcrEgAg5WaymWuaOet50bqOZDe7MbDVL6s1Z5wBGggMnmGjzt3EC1/CAGAj96dLgkQDVrOWoSe/26gfYOJciNoAgodQZUzVpmAlWTOsy+PKMMOUojYI8AfBmgVnB8pDrqhc96yThyHHXfeIHYfbZplTpqoMyqPQOquhgzJo9B4mEAldkfinyo9m1s1cTWz6QyY4Gugtomole6HzBQzR0VRoDKLM1WSWv2KyxFnt18mfEAReeRG3WWi2hVsUqlpjq9Cq0BACz8qnWQwYJmXW9Vap1CsfobvU5vKHoV2g7o6JCmVcfsRZLOrJ0FKCawXfFnhVE0zAiTF6UerdDeonCkUrcyUaarOJNC8TBbCZkjoLpgnlGhGlQ5a7Xn5QMgv+3Z7j6bQsXkeqlDwPSARX/w0VsbfaaZ069RAz3N8qHtkLSNQkky44SgvOnhf4CHDw5eoABiWHbsrAqtwc7MyZoauwJQeUj2K44mlD0VrgS0BgtzliNAljnLqeV6b8nN9IpAWxiycVeDhS+Vj9QPObjxCEBZtSVQlhRZL4GSoNhqCZQlRdZLoCQotloCZUmR9U4LFANnyuuB80lan71vP7djOC1QNlQbyQ+wvwShTWQCregkUMLmU6EEJFRJkydARampvlVUn9ZB3dO/y6dCU6EEgVsVVi1Wj1HmmSZ/I5BAU6H/GV0G9hnYPxNg/XaUG8mwKdgvJ9AE+vwDqWyaLE3eCkJvh6sS6MACYTFNhQbHoRbwh7nO+rOHAbL3QRPoXoJN+wSaQIMJBHeXCk2gwQSCu/sHvwM7ZFxKWEMAAAAASUVORK5CYII="/>
+    <button class="menu">
+        <span class="gg-menu"></span>
+    </button>
+    
+    </div>
+    
+    <div class="menuList">   
+        <ul>
+<li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbFJREFUSEvFVVFqAjEQnTG9QCEWhCyuJ3H96X8PUNCTqNB7VI/RL+1JutVQKV0o/Xc7ZSRZstk1Roron+zMvDczb14QLvzDC9eH6wB873bpfr8fI+IQALJAl7n5thZCzG97Pfu/Sml0UGg9BoBnE8EJ6xNjTA2JnIiW3SSZufE1AGZeluUbF5VKjWL3Y/JWHE9Ek26SVKRqAIXWzHwshBi0tesDFlo/IuL8l+jnRoiHNnI+ALPP29jz6IgoRcQ+ALxKpRafm8296HReAGAjleoXWh+6cPN9AAKAhVRqYtma9rkzf9k5Ej2VAB8dxDup1NIApFKpgc0/CWCSMiKa8wIdhU1Nt1UxO2KpVFU3CGAVZYu7O3C+jexSowDcYqGlW8W1xQc7cBO+ttsZIk6PqarQmv4LkCHiqm1EFhwAJqwoHl/UiFwVOQpK7ZV6S64d5NkAzCokUyHEyD3IGIDGoTggfAdDInpHRD7Gw1g8ZTUOtc0qMp9ZjCc5PlY71GNml58D4o6RiKq7YGIhu668PtKuOaxSVKtVeP7DVmC9PoRxeDOMyhpvx3WezJilxsZcvIM/rQVeKPGW8x4AAAAASUVORK5CYII="/></a></li>
+<li><a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvtlGEKgjAYht+xEwT2I5jgTfIoeZLsJNlJspMkbOAPhU4gi08MRti+kUkS7Z843ufb4zsFZl5i5nwsC3Cr66Truj2AFEACoLLWntZxnL8yEXyCIfw6ElRESmWTAY3WuRCCpn9enwG0xpwHNQQopZTZarOpuJIEK2qNIT3kHdbag8+7C30LACCLlCq46em9F9BonQoh+qkBHJ1ACr/Qs5Sy9KnyAlpjKHTnm5TTNRnA6eIUUTW3wwlI1UMXtadvENem735k171bU07Lcmr6PwF7k39LUciPbWxP8EVbLOAOxL5vGeoz+LEAAAAASUVORK5CYII="/></a></li>
+    <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQRJREFUSEvtld0NgyAQx+92oG9nYjdpN6mTtJvUTeomtYGkD5p0AmNzBIgaYkCKTyUhaoD7ef/7ACHzwMz2YV9Ar9QDAE6JXrWC6GhtzDzolRoTjevjgsjZXQM0ANACwCUWGgKoBVHFhrfIFgJoBNHZAO6xXoQAWJpmHMcXIl5zSMQAnjxKMzkm9pufdg+vzzIvxINpDLRE9lAnpTZ2KAoLhE7K29TTJIBPrs/7XQ7D8LRryYBJZlWCqF5mWxKAJUJErnge3nROAvRKceFxXJYAl85/wE8k0pVsdOa852LS2WLebWH59gV309gO4favBTm6sXn+wjVKXtv3ytysycrB7B58AfMj0xmO+XvmAAAAAElFTkSuQmCC"/></a></li>
+        <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVlJREFUSEvlVW1qg0AQnWW9QMH8CKyQnKTpSRpP0vQkNSepPUkFF/IjQi/gMuWFVdT9UAP5lQVR1515M2/ejIIevMSD/dOTAlzr+iCE+CCiHShm5vMmy05/l8uubdsjnjvqRxQ1Wn9LKfOX7bYK1abR+khEX57vsAFgnipVhACYiKouIh9IozXOhBZASmtf4lCfAdIzxvx2lsz8mSRJMcwmEn0PyMxvmyy7OR8B4AUUEdFhEB4iwnVm5koIAQp89HQmRapUPkxvWgPw2xfvjh4JA0wpusM5TEYFXkLRKhwp5X6qwBFFNgvU4abvtStVypkMzoZtonciQj3WLIcehyKrpFAjxcCqVKm974B32F3r+mRHwaIMptoPynT4oZsrC4C81HgbDZtwjLsxBv0QrUMscgdgpYLKuaHozcCCYFS8WqkO5Yoh+DOdT3NFetI/2hwti2S6xkns7D+JaKEZH7WMrwAAAABJRU5ErkJggg=="/></a></li>
+
+            <li>            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcZJREFUSEvFVVFOg0AQnc1yARP60WRJ6DX8sT2J5Rb+WW/gDawXUXoSMdD0ozVeABzzCLNZKAtoY5wfQunOm5n33qyiPw71x/lpFOCY50siWiqlbvAkooyIUmZ+x3MWRelQkV6Az8MhrqrqqUk6lCPTWq+u5nMAn0UvwDHPN0qp+x+ML2Pm51kUbbpnzgB+kdzmZOaHLkgLoBnL20jliXxn5iwIgqyqKjmDThKXlxbAqSheJ8wcAOCGUHEQBFsHAD9noTELKcICnIpiLQcndFAD+IKZV9KFBZgw+5pIJB0TgMuF2wGqQhcSWyKKmXmHMXRl2PAFpcEb8IJ7Ng2NWdXFSLZTUYCouHlPQmMAMDk6E7A89AK4LX7s99dfzC+K+TGMojsgNnzdaq0T6awrkNCYOrcL4CrIyq0PQKrVWi8cAHbHGxpTy9lLcp9pfPPqKrCXZCw1pRS6kLBzbL7FWusUFSMhTCZS7PGP5dB24FlurUUmQJLcc8YqqDUivHhWRb2eiWiHxI0PIN+4zw+uyc4AHIUMOnXAwcPLTrooy3I95tYuiE8U/3PhSHXgpCxLzBoOlysTn+GT3UVX5uQdMfLH0Uv/UqBvGmExKMIeNuYAAAAASUVORK5CYII="/></a></li>
+</ul>
+<div class="second">
+<div class="verticle"><p style="color: aliceblue;"><i style="color:aqua;">Insticnt</i>-Released May 22,2020</p>
+<img class="small" src="https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+</div>
+<div>
+<h3 class="text">LEVEL DAYS</h3>
+<h3 class="text1">CONRO</h3>
+
+    <img height=80px; width=80px style="border-radius:50px"; src="https://images.pexels.com/photos/16578958/pexels-photo-16578958/free-photo-of-woman-portrait-near-louvre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+    <img src="https://images.pexels.com/lib/avatars/grey.png?w=80&h=80&fit=crop&dpr=1">
+<br> 
+<button class="but"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAIxJREFUSEvtlMEOgCAIQOXEZt/cVt+TH+Sf6NaGrfKYBi5mBz0jDx8CGOUDyvnNALwa7qtoj3EjgBkR/WuphYDqC/YQ0nmPiFacpqUFwgLkxJ5SmtFaJwFJAHdeACfRJgfk8rnamgFcbf8F6ClSbLLeN+XqeJqPepO1V4VkYkuxfbfpeMG1G7/QUMtxAJyGXhlNuQroAAAAAElFTkSuQmCC"/><span style="color:white">Listen Now</span></button>
+<button class="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVlJREFUSEu1leFtwjAQhT+rDdJtETaBSUomoUwCTNJsAlucRFK5OmQjJyXBSkh+WtZ7d+fvXRwLf25hfWYZNKobYO+hdHAFDoVInRY92SCI//Qn0MJaRMzs/s0xMPGNh9NKpGpUv60boC5Etu8w8CYSK1bV8hMudlaIPAqf1EFvPIcWTh+wd7DzcF2JrCd1EKo82mhG6NumD93pwCrzcHRQ2iw9nFciJxO7qdr5Lgp7qIwcux/OagfnQYqGqLBH7AnfHzU3P48OGtUhKqKW8f2P81dGqcEgFUBnrq9EnwbtpnoJs+9QES7PN0iCMlRg3UKVpjSnkw5FN1WjxHguw+Oebc/EMxO081845BplB80wNf7DGM3oTpKDr7jsUqwnBS1uz7GgmXHMzuRllwZysWUXqVtk2YXV8RTrWcsuxXIE6+Fll8N1eqeH9dVB9bZfZm4x2TnIFezf+wMTDrcZUHsMhwAAAABJRU5ErkJggg=="/><span style="color:white">Share</span></button>
+</div>
+</div>
+</div>
+</div>
+<aside class="black">
+<h1 class="h1">STREAM IT YOUR WAY</h1><br>
+<table class="h1">
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAb1JREFUSEvFVW1uwjAMfdFakHsKOMngJINj9Ne2C3AF2L/tFIC0e3Q7haV2qJODE7kfUNDGFglFKs57jt+L7XDj5W6Mj0GCinkGQH73stfAB4CdAz5lT4l255I8ScDMkwRYK/hJDCE8AHMiEuLO6iWomJ8APEq0ADjgJWQrxHfAzAGTGnjQ3cekRHKusToEFhzAc9+hgKC3XIRk+uIbBHqgUID5UH0Dkeq01dsu7bkGQcW8VSE3I6JlACiZXw9ATkSBvFPrcHMhGRFNQ0AkKJkXDli3AySwYq4BlKjrPM2yVZ+YLVPE20cCU/tO3ZUg4L4DyFMi2RurD8PeYO2ARQ0sR0Qbe7JFcPzLuVUyHufOubKthTpu7sNMnQux3BcwbXu6l+B4uJCyJVn2JjjBJLbMv0pg9EJK5LGtBt5BADr2vLRExijRhX8nsn0s1seX2lTjwjuKRok3sD6ugasfWsnsXWgd1NDAukCbXMeufQ9MMxftJHtZDQ07zS4IpcFnm52Cx8472OzMLWKHDAMGwP4A+OGSABPtWb5dn0vmfwZOqLUKL4NFsvQjU4WT6bX/0cg8Jei13weH/rWA7fhvJ9EaKNGaYxkAAAAASUVORK5CYII="/><span>Player</span></td>
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVld1tgzAURo/VgHS3IJskk4RM0maSkEnCJqFTXCkguTIybQqGYEQe4kfbfOfy3R8bXrzMi/VZDKhVvywcUpHtVJCLALXqFdhZKFKR46qAu+rZQO5F94lIuTbgZiCzcExFimc5nLRIVbMP2DmRTsx5D5QNVBvILVRToFFAz4o2UCdmoHL+P0bu9y+JiIP/W0FAl8Rnv98/b2ArIi6A3zUA3FVzA+dYcSCY8BDgsUpmcabKNQRoq2SW8t+lU8h/dzwA1Ko2UtxdjwK0XRoJKRORfeibVXIw1dWrVdFYLwwArns3cIu0qLs+sCrYaGv2QhDgZ9A1slyDiR6dRTFW+YEXfHjmTNNPX7algW83SS1kBg5+/9RA0Z9BXVIWvWgxBfD+gB8KCXkZL7pAkwAAAABJRU5ErkJggg=="/></td>
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa1JREFUSEu1le1twkAMht9TAclTNJ2kMElhEsokpJOQTkKZwhIfCvLFPjmXQGgQ9wcuif344z1fwItXeLF/DAJOzHMA8xp4D8CyBv4AVAE4yO+UqLoX5E0AMxcTYCvO7zkQ4AVYEJGAO6sXcGL+BrB+tHwCCcDPlEjsWqsDODIvQxP5mLXJIS2AlmU/xrPYaCYr35cW4MS8s5rrx1LXXw+UZss+AEVff8RuRvRhNgngS1MDqxlROZSJZPwGzAPwlcEWlkUvAMBGJOiMPg2mMo1ZXYDK1KOwnWaWeuEBW9F5HrU6TI/VQdy7MyEKqo7Me30v52OhpWxs3UtztjkDZa5viVQ+uFGaBLY++AyMntSgpHiKXdNaJ1hLs86znxJF3wngFTTU3Lw8+r0o0DIoZ0SrHNA6vTVQ2rw5N/MnrglQ1EDRoxwfV7fJOtRSFKIkPQux5hq1DLyD9SZTTgJ4macSPTrcHCzOH5uyLvykoFaJZPPsqFBIOmQdgDx46bCzNP87rtWuM0l7MzDIoz0ZdeFkkChLADKP4u0WGtnKPBp/ZXpRP/N/8NJ/xrnYXgGg2sQZbxZzAAAAAABJRU5ErkJggg=="/></td>
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPBJREFUSEvtldENgkAMhr+LYtItdBJlE51EN1EnkU10iybwcKYCBoJyEI/EB/oCXO76tf+1xTGxuYn9MwOCCrckUtX1EvbA1sPaTrvq+cmTh0e97uBh3w6uiUjWWC9fC9UdcAuGFNhQQQ415J1Brnp2ZfQxLEtE0kqB0l+ueu+TYwzVsliJbMYCUg+W5etu+uwjoFD1fYcSEdcogmMIYvtbGQwB1E6HgP4XUKiegPESDaiiny/ZmsyaLYZ1+6BQjQbwcFmJHFpVVFXGPUb4QNoZFebYIAs4WjMNGXZ2pjnwgOzrsIsUecfN/EcLKju5RE+UH2YZX6O6eQAAAABJRU5ErkJggg=="/></td>
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXRJREFUSEvFVW1ugzAMfdEGkm9BT7JxkpWTdJyk7UlGT7LuFJZKKyYzB4V8QTVV9R+kkPjZ7z0nBg8O8+D8eD4AM1evwBbAG4D3ATgb4CxfAKeS6JBjIdmBJt5L0lyCATjcgJaIBDCIKEDPLEm/1uqj3bSxbgIArfx7bXK7T0BuQO13EgD0zFJ5lpYUuICURBv3/wzgwrw1gPD+n6gLos4mmAH0zJ8AdonscugU+d8NQGWASs+1BZHkGcPvYG/+LOlHVxDVsmiLULs2A/DhnZn2BgAJ/scDIr4VUKgUx1yYg4J8HXyKfIG7K9DIoGmlR9t+ik6Zi5KoSWkw+V8pOLqc2zX9Rs0wAI07D7MO1syAJreCBmJdgY07C7E5yDlpyb4zBwUiy4J08QLsEm7KAczcE9XALq696By00QyxCy95m8Ys6JdvRXcHy9+zCOA6R94EA/xoEqFkuhJS3CUB1OfIVbekeFTkNYfu2fP8N/meamN7fwHOYKIZDmhY8gAAAABJRU5ErkJggg=="/></td>
+    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEvtlEFugzAQRZ+VgjS3SE5SOEnhJGlOkvQkpSdJbjFSIKIyAmTA2GzYZbbg/2b+H9uwc5md9XkDog5HLVLV4wcUwCeQtfAw8AD+EpHvGCEIqFUz4HdNpIf9hECrAFd8EGrgZmEHyAx8OROViUjlayQEsJ3bCapEJPcdrlWtRWfbwAtyEbHWTWoB6D2/9uI0cPIdHFRq1aGRi8+qCeCpWhiw4l21UKYinS1r5VjpnXQEzAKtGihDnQ/AfuK7tcna+YKLe24EPFWvBooWbqlIGVs/93ut2jpTT/JwAXcDRyBf24gQdJbdaNcCEAt1A6SzKxU52X/dDILbsMUyN8dEpNNehOxeqi0hz8Lu1tvNcbKmw8XZ0m3o+XAvnfeiHeBsO+lD38Qb1nS+gdHXdJN64Kc3IOrg7hb9A7fjmRm2q1C0AAAAAElFTkSuQmCC"/></td>
+</table>
+</aside>
+<nav class="black">
+    <h1 class="h11">TRACK LIST</h1><br>
+    <ol>
+        <li class="grid"><div class="gap">1<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+        
+        <li class="grid"><div class="gap">2<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+        
+        <li class="grid"><div class="gap">3<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+        
+        <li class="grid"><div class="gap">4<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+        
+        <li class="grid"><div class="gap">5<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">6<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">7<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">8<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">9<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">10<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">11<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+
+        <li class="grid"><div class="gap">12<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAI1JREFUSEvtlMENgCAMAFtWUGfwwYwkOo/OgwzBDjUY/Ym0JA0+4F169EqLoHxQOT90QNFwW0XxODYwxo3zHIpPzQR8VhC9p3SPiNbJ2qUGwgJciYkCArjB2l0C4gOerIi7RJsccIO42qoBXG3/BegpUmuy5jfl6nibj+8ma68KycTmYttu015BMqDegxMGUlYZKkb3ZwAAAABJRU5ErkJggg=="/>
+            <p>The Small Thgings<br>contro</p></div>
+        <div class="gap"><span>3.35</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWxJREFUSEu1lU1uwjAQhWecXqBSug9Lm0vASUpOQnMSwknqSyRelj2RegKYaoJNnSgG1028tKw3f98bIyx8cGF9+FeAszEbJNoDQAEAJ0Ks3qTUftLJAaz457gDGeLqVcqTu08O0LUti2+AqM7X6/LcNB+IyNXoXKntHAGIRVzG38YUF6IvvsuVuieeVIHfHiKqXoSoL9frHhB3PItcqVVSBTbLQ9+awCHErT/oQQU2MxZgKjQgHnMpa9bqmuZgM7xJI5YEcEIifg9ApEmIY5CiEBU8xIGwHWqsf+4VPKDCaekpzp8F8gMEqRj39ZnopNG6tmXEigkqYJYAnlFCCeoMsfRdGlPJgKLOmB243UJUMxXIRP3uG6alzoSoYgNFG81iyvwzwj2mFs93t+x8rJOM5m3PoNE4sPNOn0dMH8dvBoZccNn11C2y7PrVEcY6fdn5rQph/XDZ/XUeA6xvX2Y525cZm0wSRbHi/O4Hvk3pGd/mIhkAAAAASUVORK5CYII="/></div></li>
+    </ol>
+</nav>
+<div class="black">
+<h1 class="h2">OTHER RELEASES LIKE THIS</h1>
+</div>
+<div class="black album">
+ <div>  <img width="100px" height="100px" src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&w=600 " alt=""><h4>Feeling</h4><p>contro</p></div>
+ <div>  <img  width="100px" height="100px" src=" https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h4>Feeling</h4><p>contro</p></div>
+ <span>  <img  width="100px" height="100px" src=" https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h4>Feeling</h4><p>contro</p></span>
+ <span>  <img  width="100px" height="100px" src="https://images.pexels.com/photos/1644616/pexels-photo-1644616.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h4>Feeling</h4><p>contro</p></span>
+ <span>  <img  width="100px" height="100px" src="https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h4>Feeling</h4><p>contro</p></span>
+ <span>  <img  width="100px" height="100px" src="https://images.pexels.com/photos/4709825/pexels-photo-4709825.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""><h4>Feeling</h4><p>contro</p></span>
+
+</div>
+<hr>
+<div class="black about">
+    <div>
+        <ol>
+            <li>ABOUT</li>
+            <li>CONTACT US</li>
+            <li>CAREER</li>
+            <li>NEWS</li>
+            
+        </ol>
+    </div>
+    <div><ol>
+        <li>TERMS &AMP; CONDITIONS</li>
+        <li>PRIVATE POLICY</li>
+    </ol></div>
+    <div>
+        <ol>
+            <li>Don't miss a thing <br> stay up to date</li>
+            <br>
+            <br>
+            
+            <li class="arrow"><input type="email" placeholder="enter email"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALlJREFUSEvtlLENwjAURO9YIKKLu7AJbMImZJOwCaukczoUBojRL5AQCvifQ7q4/nrPvn8ysfLhynxsgmzCckRjjO0EXPch9Fk6oO3A4CAvAPoppZNHIr3gHmOzI28AGq9EElgkqkQWqJIigSL5KhiHIXla8jYzu/i/Cqq6PnxealFEJDsCR2vUHNxkRQJrkgdeJFDgskCFy4JHjOdEdr8yX7xk+4+qEFpvhYuW7IXLESng1+z2gmxqT4fZXxntbfsOAAAAAElFTkSuQmCC"/></li>
+        </ol>
+    </div>
+
+</div>
+</body>
+</html>
